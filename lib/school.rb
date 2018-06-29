@@ -14,5 +14,9 @@ class School
       @roster[grade] = []
       @roster[grade] << student_name
     end
+
+    def sort
+      @roster.each do |grade, school_name|
+      @roster[grade] = school_name.sort
   end
 end
